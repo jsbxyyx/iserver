@@ -24,6 +24,10 @@ android {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
     }
+    compileOptions {
+        sourceCompatibility = 1.6
+        targetCompatibility = 1.6
+    }
 }
 
 dependencies {
@@ -44,8 +48,9 @@ dependencies {
     implementation 'commons-io:commons-io:1.4'
     implementation 'commons-fileupload:commons-fileupload:1.4'
     // 阿里云sdk
-    implementation 'com.aliyun:aliyun-java-sdk-core:4.4.3'
-    implementation 'com.aliyun:aliyun-java-sdk-alidns:2.0.10'
-    implementation 'org.apache.httpcomponents:httpclient:4.5.3'
-    implementation 'org.apache.httpcomponents:httpmime:4.5.3'
+    implementation 'com.aliyun:aliyun-java-sdk-core:2.4.2'
+    implementation 'com.aliyun:aliyun-java-sdk-alidns:2.0.1'
+    // javax.xml libs/xercesImpl-2.11.0.jar 'xerces:xercesImpl:2.11.0'
+    implementation 'javax.xml.bind:jaxb-api:2.2.4'
+
 }
