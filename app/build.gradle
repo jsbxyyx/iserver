@@ -58,5 +58,7 @@ dependencies {
     implementation 'com.aliyun:aliyun-java-sdk-alidns:2.0.1'
     // javax.xml libs/xercesImpl-2.11.0.jar 'xerces:xercesImpl:2.11.0'
     implementation 'javax.xml.bind:jaxb-api:2.2.4'
+    // guava
+    implementation 'com.google.guava:guava:30.1-android'
 
 }

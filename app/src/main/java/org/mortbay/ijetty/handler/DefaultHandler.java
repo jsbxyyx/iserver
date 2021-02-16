@@ -56,7 +56,8 @@ public class DefaultHandler extends org.eclipse.jetty.server.handler.DefaultHand
         writer.write("<p>i-jetty is running successfully.</p>");
 
         Server server = getServer();
-        Handler[] handlers = server==null?null:server.getChildHandlersByClass(ContextHandler.class);
+//        Handler[] handlers = server==null?null:server.getChildHandlersByClass(ContextHandler.class);
+        Handler[] handlers = null;
 
         int i=0;
         for (;handlers!=null && i<handlers.length;i++)
